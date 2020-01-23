@@ -17,6 +17,8 @@ echo "### BEGIN DEBUG ###"
 vmstat -s
 cat /proc/meminfo
 #cat /proc/cpuinfo
+top -b -n 1 > top.log
+cat top.log
 
 echo "### END DEBUG ###"
 
