@@ -12,7 +12,7 @@
 set -euxo pipefail
 
 echo "### BEGIN DEBUG ###"
-echo "### v22"
+echo "### v32"
 
 ### DEBUG
 vmstat -s
