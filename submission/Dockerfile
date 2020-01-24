@@ -45,5 +45,6 @@ RUN curl -L https://github.com/DIUx-xView/xView2/releases/download/v1.0/localiza
 RUN curl -L https://github.com/DIUx-xView/xView2/releases/download/v1.0/classification.hdf5 -o ~/code/xview-2/weights/classification.hdf5
 
 # Finally running the container with the run.sh wrapper script to pass the CLI arguments to inference.sh
-RUN chmod +x ~/code/xview-2/submission/run.sh
+#RUN chmod +x ~/code/xview-2/submission/run.sh
+RUN chmod a+x /home/appuser/code/xview-2/submission/run.sh
 ENTRYPOINT ["/home/appuser/code/xview-2/submission/run.sh", "/home/appuser/code/xview-2/"]

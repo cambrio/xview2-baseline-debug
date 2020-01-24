@@ -9,16 +9,18 @@
 # 4) path to output localization image 
 # 5) path to output localization+classification image
 
-set -euxo
+set -euxo pipefail
 
 echo "### BEGIN DEBUG ###"
+echo "### v22"
 
-# DEBUG
+### DEBUG
 vmstat -s
 cat /proc/meminfo
-#cat /proc/cpuinfo
-top -b -n 1 > top.log
-cat top.log
+#cat /proc/cpuinfo # careful, can be up to 96 CPUs, lots of info
+# top -b -n 1 > /tmp/top.log
+# cat /tmp/top.log
+df -h
 
 echo "### END DEBUG ###"
 
