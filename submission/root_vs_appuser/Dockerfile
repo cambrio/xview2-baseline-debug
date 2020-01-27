@@ -3,6 +3,7 @@ FROM rthosfeltcmu/cmu_xview2_baseline:verbose
 ADD test_pre_00422.png /
 ADD test_post_00422.png /
 
+# Replace the cloned run.sh with the one from this local debug dir
 ADD run.sh /home/appuser/code/xview-2/submission/run.sh
 #RUN chmod a+x /home/appuser/code/xview-2/submission/run.sh
 
