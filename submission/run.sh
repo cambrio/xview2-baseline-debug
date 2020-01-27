@@ -14,6 +14,9 @@ set -euxo pipefail
 echo "### BEGIN DEBUG ###"
 echo "### v32"
 
+ls -l
+ls -l /tmp
+
 ### DEBUG
 vmstat -s
 cat /proc/meminfo
