@@ -12,11 +12,15 @@
 set -euxo pipefail
 
 echo "### BEGIN DEBUG ###"
-echo "### v066"
+echo "### v64 working out users"
 
 whoami
+pwd
 ls -l
+ls -l /
 ls -l /tmp
+
+### DEBUG
 vmstat -s
 cat /proc/meminfo
 #cat /proc/cpuinfo # careful, can be up to 96 CPUs, lots of info

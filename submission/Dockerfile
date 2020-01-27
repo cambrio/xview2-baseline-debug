@@ -23,7 +23,7 @@ ADD https://github.com/fchollet/deep-learning-models/releases/download/v0.2/resn
 
 RUN chmod -R 777 /home/appuser/
 
-USER appuser
+#USER appuser
 
 SHELL ["/bin/bash", "-c"]
 
