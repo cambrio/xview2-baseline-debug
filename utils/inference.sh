@@ -133,10 +133,9 @@ cd "$XBDIR"/spacenet/inference/
 
 # Quietly running the localization inference to output a json with the predicted polygons from the supplied input image
 printf "Running localization\n"
-python3 ./inference.py --input "$input" --weights "$localization_weights" --mean "$XBDIR"/weights/mean.npy --output "$label_temp"/"${input_image%.*}".json >> "$LOGFILE" 2>&1
+python3 ./inference.py --input "$input" --weights "$localization_weights" --mean "$XBDIR"/weights/mean.npy --output "$label_temp"/"${input_image%.*}".json
 
 # printf "\n" >> "$LOGFILE"
-
 printf "Done with localization, proceeding to classification...\n"
 # Classification inferences start below
 cd "$XBDIR"/model
