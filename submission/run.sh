@@ -12,7 +12,7 @@
 set -euxo pipefail
 
 echo "### BEGIN DEBUG ###"
-echo "### v002"
+echo "### v003"
 
 whoami
 ls -l
