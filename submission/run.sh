@@ -12,17 +12,17 @@
 set -euxo pipefail
 
 echo "### BEGIN DEBUG ###"
-echo "### v066"
+echo "### v002"
 
 whoami
 ls -l
-ls -l /tmp
-vmstat -s
-cat /proc/meminfo
-#cat /proc/cpuinfo # careful, can be up to 96 CPUs, lots of info
-# top -b -n 1 > /tmp/top.log
-# cat /tmp/top.log
-df -h
+ls -l /inputs
+# vmstat -s
+# cat /proc/meminfo
+# #cat /proc/cpuinfo # careful, can be up to 96 CPUs, lots of info
+# # top -b -n 1 > /tmp/top.log
+# # cat /tmp/top.log
+# df -h
 
 echo "### END DEBUG ###"
 
