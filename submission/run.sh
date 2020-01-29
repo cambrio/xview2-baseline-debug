@@ -12,7 +12,7 @@
 set -euxo pipefail
 
 echo "### BEGIN DEBUG ###"
-echo "### v003"
+echo "### v005"
 
 whoami
 ls -l
@@ -36,7 +36,6 @@ else
     ls -l $2
     ls -l $3
     ls -l $4
-    ls -l $5
     
     # The two images we will use for scoring will be identical so just copying the output localization png to the classification path 
     cp "$4" "$5"
